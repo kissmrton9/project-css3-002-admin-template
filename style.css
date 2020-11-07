@@ -1,0 +1,168 @@
+:root{
+    font-size: 16px;
+    box-sizing: border-box;
+    --text-bright: rgb(236,236,236);
+    --text-bright-inactive: rgb(136, 136, 136);
+    --header_bgcol:rgb(51,57,64);
+}
+
+#top__menu {
+    display: flex;
+    flex-basis: 83.33%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+    transition: background-color 0.3s;
+    padding: 10px 0 10px 0;
+    border-radius: 0.5rem;
+}
+
+.card__top {
+    background-color: inherit;
+    transition: background-color 0.3s;
+    padding: 20px 0 20px 0;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.content {
+    flex: 83.33%;
+    padding: 20px;
+}
+
+.div__breadcrumb {
+    background-color: rgb(233,236,239);
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.header--dark {
+    background-color: var(--header_bgcol);
+    color: var(--text-bright);
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header__title {
+    flex-basis: 16.66%;
+    font-size: 1.25rem;
+}
+
+.header__search {
+    display: inline-flex;
+}
+
+.left__active{
+    color: var(--text-bright);
+}
+
+.left__inactive{
+    color: var(--text-bright-inactive);
+}
+
+.main__card {
+    flex-basis: 22%;
+    position: relative;
+    color: var(--text-bright);
+    border-radius: 4px;
+}
+
+.main__card--blue {
+    background-color: rgb(0,123,255);
+}
+
+.main__card--yellow {
+    background-color: rgb(255,193,7);
+}
+
+.main__card--green {
+    background-color: rgb(40,167,69);
+}
+
+.main__card--red {
+    background-color: rgb(220,53,69);
+}
+
+.main__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px){
+    .main__card{
+        width: 100%;
+    }
+    .main__cards{
+        flex-direction: column;
+    }
+}
+
+.main__nav {
+    background-color: rgb(33,37,41);
+    color: var(--text-bright-inactive);
+    flex: 100%;
+}
+
+@media screen and (max-width: 700px){
+    .only_pc{
+        display: none;
+    }
+}
+
+
+.search__input {
+    border-radius: 4px 0 0 4px;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    border: 4px;
+    /* border-color: rgb(0,0,0); */
+}
+
+.search__input:focus {
+    border-color: rgb(128,189,255);
+    transition: border-color .15s;
+}
+
+.search__btn {
+    background-color: rgb(0,123,255);
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+    font-size: 1.25rem;
+}
+
+.span__icon {
+    padding: 0 6px 0 6px;
+    color: inherit; 
+}
+
+aside {
+    display: flex;
+    flex-basis: 16.66%;
+}
+
+li{
+    padding: 10px 0 10px 0;
+}
+
+li[class~="uppercase"]{
+    padding: 20px 0 10px 0;
+}
+
+main {
+    display: flex;
+}
+ul[class~=fa-ul]{
+    padding:0;
+}
+
