@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -29,61 +29,82 @@
             </span>
     </header><!--
  --><main><!--
-     --><aside style="height:100vh">
+     --><aside>
             <nav class="main__nav">
                 <ul class="nav__ul fa-ul">
-                    <li class="uppercase left__inactive"><span class="only_pc">CORE</span></li>
+                    <li class="uppercase left__inactive"><h4 class="only_pc">CORE</h4></li>
                     <!-- <ul class="fa-ul"> -->
                         <li class="left__active"><span class="fa-li"></span><i class="fa fa-tachometer" aria-hidden="true"></i>
-                            <span class="only_pc">Dashboard</span>
+                            <!-- <span class="only_pc">Dashboard</span> -->
+                            <a class="only_pc" href="#">Dashboard</a>
                         </li>
                     <!-- </ul> -->
-                    <li class="uppercase left__inactive"></i><span class="only_pc">INTERFACE</span></li>
+                    <li class="uppercase left__inactive"></i><h4 class="only_pc">INTERFACE</h4></li>
                     <!-- <ul class="fa-ul"> -->
                         <li class="left__inactive"><span class="fa-li"></span><i class="fa fa-windows" aria-hidden="true"></i>
-                            <span class="only_pc">Layouts</span>
+                            <!-- <span class="only_pc">Layouts</span> -->
+                            <a class="only_pc" href="#">Layouts</a>
                             <span class="span__icon only_pc" style="position: absolute; right: 0;">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </span>
                         </li>
                         <li class="left__inactive"><span class="fa-li"></span><i class="fa fa-bookmark" aria-hidden="true"></i>
-                            <span class="only_pc">Pages</span>
+                            <!-- <span class="only_pc">Pages</span> -->
+                            <a class="only_pc" href="#">Pages</a>
                             <span class="span__icon only_pc" style="position: absolute; right: 0;">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </span>
                         </li>
                     <!-- </ul> -->
-                    <li class="uppercase left__inactive"><span class="only_pc">ADDONS</span></li>
+                    <li class="uppercase left__inactive"><h4 class="only_pc">ADDONS</h4></li>
                     <!-- <ul class="fa-ul"> -->
                         <li class="left__inactive"><span class="fa-li"></span><i class="fa fa-area-chart" aria-hidden="true"></i>
-                            <span class="only_pc">Charts</span>
+                            <!-- <span class="only_pc">Charts</span> -->
+                            <a class="only_pc" href="#">Charts</a>
                         </li>
                         <li class="left__inactive"><span class="fa-li"></span><i class="fa fa-table" aria-hidden="true"></i>
-                            <span class="only_pc">Tables</span>
+                            <!-- <span class="only_pc">Tables</span> -->
+                            <a class="only_pc" href="#">Tables</a>
                         </li>
                     <!-- </ul> -->
                 </ul>
             </nav>
         </aside><!--
      --><section class="content">
-        <h1>Dashboard</h1>
-        <div class="div__breadcrumb">Dashboard</div>
+            <h1>Dashboard</h1>
+            <div class="main__breadcrumb">Dashboard</div>
             <div class="main__cards">
                 <div class="main__card main__card--blue">
                     <div class="card__top">Primary Card</div>
-                    <div class="card__bottom">View Details <span class="span__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                    <a href="#">
+                        <div class="card__bottom">
+                            View Details <span class="span__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        </div>
+                    </a>
                 </div>
                 <div class="main__card main__card--yellow">
                     <div class="card__top">Warning Card</div>
-                    <div class="card__bottom">View Details <span class="span__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                    <a href="#">
+                        <div class="card__bottom">
+                            View Details <span class="span__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        </div>
+                    </a>
                 </div>
                 <div class="main__card main__card--green">
                     <div class="card__top">Success Card</div>
-                    <div class="card__bottom">View Details <span class="span__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                    <a href="#">
+                        <div class="card__bottom">
+                            View Details <span class="span__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        </div>
+                    </a>
                 </div>
                 <div class="main__card main__card--red">
                     <div class="card__top">Danger Card</div>
-                    <div class="card__bottom">View Details <span class="span__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                    <a href="#">
+                        <div class="card__bottom">
+                            View Details <span class="span__icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
